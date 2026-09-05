@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentEats Finland - Restaurants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <h1>StudentEats Finland</h1>
+        <nav>
+            <a href="index.html">Restaurants</a>
+            <a href="restaurant.html">Menus</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="Welcome">
+        <h2>Find student restaurants in Finland</h2>
+        <p>Find affordable student meals and check daily and weekly menus.</p>
+    </section>
+
+    <section class="filters">
+
+        <input type="text" placeholder="Search restaurant...">
+
+        <select>
+            <option>"All cities"</option>
+            <option>"Helsinki"</option>
+            <option>"Espoo"</option>
+            <option>"Vantaa"</option>
+            <option>"Tampere"</option>
+            <option>"Turku"</option>
+        </select>
+
+        <select>
+            <option>"All providers"</option>
+            <option>"UniCafe"</option>
+            <option>"Sodexo"</option>
+            <option>"Compass Group"</option>
+        </select>
+
+        <button>Search</button>
+
+    </section>
+
+    <section>
+
+        <h2>Restaurants</h2>
+        <div class="restaurant-list">
+            <article class="restaurant-card">
+                <div class="restaurant-top">
+                    <h3>Unicafe Kaisa</h3>
+                    <span class="favourite">☆</span>
+                </div>
+
+                <p>📍 Helsinki</p>
+                <p>Fabianinkatu 30</p>
+                <p class="provider">Provider: UniCafe</p>
+
+                <hr>
+                <h4>Today's menu</h4>
+                <p>Chicken pasta</p>
+                <p>Vegetarian pasta</p>
+
+                <p class="price">€3.10</p>
+                <a class="button" href="restaurant.html">
+                    View restaurant
+                </a>
+            </article>
+
+            <article class="restaurant-card">
+                <div class="restaurant-top">
+                    <h3>Sodexo Otaniemi</h3>
+                    <span class="favourite">☆</span>
+                </div>
+
+                <p>📍 Espoo</p>
+                <p>Otakaari 1</p>
+                <p class="provider">Provider: Sodexo</p>
+
+                <hr>
+
+                <h4>Today's menu</h4>
+                <p>Vegetable curry</p>
+                <p>Chicken rice</p>
+
+                <p class="price">€3.10</p>
+
+                <a class="button" href="restaurant.html">
+                    View restaurant
+                </a>
+            </article>
+
+            <article class="restaurant-card">
+                <div class="restaurant-top">
+                    <h3>Amica Tampere</h3>
+                    <span class="favourite">☆</span>
+                </div>
+
+                <p>📍 Tampere</p>
+                <p>Kalevantie 4</p>
+                <p class="provider">Provider: Compass Group</p>
+
+                <hr>
+
+                <h4>Today's menu</h4>
+                <p>Fish and potatoes</p>
+                <p>Lentil casserole</p>
+
+                <p class="price">€3.10</p>
+
+                <a class="button" href="restaurant.html">
+                    View restaurant
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <h2>Restaurants near you</h2>
+        <p>
+            The map shows nearby student restaurants.
+            The highlighted restaurant is the closest one.
+        </p>
+
+        <div class="map">
+
+            <div class="road road-one"></div>
+            <div class="road road-two"></div>
+            <div class="road road-three"></div>
+
+            <div class="map-marker marker-one">📍</div>
+            <div class="map-marker marker-two">📍</div>
+
+            <div class="nearest">
+                ⭐ Nearest restaurant
+        </div>
+
+            <div class="map-marker marker-nearest">📍</div>
+
+        </div>
+        <div class="map-info">
+            <strong>Nearest restaurant:</strong> UniCafe Kaisa
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>StudentEats Finland © 2026</p>
+</footer>
+</body>
+</html>
