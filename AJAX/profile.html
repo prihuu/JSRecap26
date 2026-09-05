@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile - StudentEats Finland</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+
+        <h1>StudentEats Finland</h1>
+
+        <nav>
+            <a href="index.html">Restaurants</a>
+            <a href="restaurant.html">Menus</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h2>My profile</h2>
+
+    <section class="profile-card">
+        <div class="profile-picture">
+            <div class="profile-placeholder">👤
+
+            </div>
+
+            <label for="profile-image" class="upload-button">
+                Change Picture
+            </label>
+
+            <input
+                type="file"
+                id="profile-image"
+                accept="image/*">
+
+        </div>
+
+        <div class="profile-information">
+            <label for="profile-name">Name</label>
+            <input
+                type="text"
+                id="profile-name"
+                value="Student User">
+
+            <label for="profile-email">Email</label>
+            <input
+                type="email"
+                id="profile-email"
+                value="student@example.com">
+
+            <label for="profile-city">City</label>
+            <select id="profile-city">
+
+                <option>Helsinki</option>
+                <option>Espoo</option>
+                <option>Vantaa</option>
+                <option>Tampere</option>
+                <option>Turku</option>
+
+            </select>
+
+            <button>
+                Save changes
+            </button>
+        </div>
+
+    </section>
+
+    <section class="favourites">
+        <h2>My Favourite restaurants</h2>
+        <div class="favourite-item">
+            <div>
+                <h3>⭐ UniCafe Kaisa</h3>
+                <p>Helsinki</p>
+            </div>
+
+            <button class="remove-button">
+                Remove
+            </button>
+
+        </div>
+
+        <div class="favourite-item">
+            <div>
+                <h3>⭐ Sodexo Otaniemi</h3>
+                <p>Espoo</p>
+            </div>
+            <button class="remove-button">
+                Remove
+            </button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>StudentEats Finland © 2026</p>
+</footer>
+
+</body>
+</html>

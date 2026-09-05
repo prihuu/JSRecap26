@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentEats Finland - Restaurants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+
+        <h1>StudentEats Finland</h1>
+
+        <nav>
+            <a href="index.html">Restaurants</a>
+            <a href="restaurant.html">Menus</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main class="container">
+
+    <section class="welcome">
+
+        <h2>Find student restaurants in Finland</h2>
+
+        <p>
+            Find affordable student meals and check daily and weekly menus.
+        </p>
+
+    </section>
+
+
+    <!-- filters -->
+
+    <section class="filters">
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search restaurant..."
+        >
+
+        <select id="city-filter">
+            <option value="">All cities</option>
+        </select>
+
+        <select id="provider-filter">
+            <option value="">All providers</option>
+        </select>
+
+        <button id="search-button">
+            Search
+        </button>
+
+    </section>
+
+
+    <!-- error -->
+
+    <p id="error-message" class="error-message"></p>
+
+
+    <!-- Restaurants -->
+
+    <section>
+
+        <h2>Restaurants</h2>
+
+        <div
+            class="restaurant-list"
+            id="restaurant-list"
+        >
+            <p>Loading restaurants...</p>
+        </div>
+
+    </section>
+
+    <!-- mapppp -->
+
+    <section class="map-section">
+
+        <h2>Restaurants near you</h2>
+
+        <p>
+            The map shows nearby student restaurants.
+            The highlighted restaurant is the closest one.
+        </p>
+
+        <div class="map">
+
+            <div class="road road-one"></div>
+            <div class="road road-two"></div>
+            <div class="road road-three"></div>
+
+            <div class="map-marker marker-one">📍</div>
+            <div class="map-marker marker-two">📍</div>
+
+            <div class="nearest">
+                ⭐ Nearest restaurant
+            </div>
+
+            <div class="map-marker marker-nearest">
+                📍
+            </div>
+
+        </div>
+
+        <div class="map-info">
+
+            <strong>Nearest restaurant:</strong>
+
+            <span id="nearest-restaurant">
+                Loading...
+            </span>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- modal -->
+
+<div
+    id="restaurant-modal"
+    class="modal"
+>
+
+    <div class="modal-content">
+
+        <button
+            id="close-modal"
+            class="close-modal"
+        >
+            &times;
+        </button>
+
+        <div id="modal-content">
+            Loading...
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>
+        StudentEats Finland © 2026
+    </p>
+
+</footer>
+
+<script src="tr.js"></script>
+</body>
+</html>
